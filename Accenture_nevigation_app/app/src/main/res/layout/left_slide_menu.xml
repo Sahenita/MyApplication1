@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/left_slide_menu_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+>
+    <FrameLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+                android:id="@+id/lin_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:weightSum="2">
+            <LinearLayout
+                    android:id="@+id/lin_block_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.06"
+                    android:orientation="vertical"
+                    android:background="#9539de"
+                    android:clickable="true"
+            >
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="vertical"
+                >
+
+                    <FrameLayout android:layout_width="@dimen/slidr_img_width"
+                                 android:layout_height="@dimen/slidr_img_width"
+                                 android:id="@+id/fram_pic_block"
+                                 android:layout_marginTop="@dimen/margintop_leftslider_img"
+                                 android:background="@drawable/imagebackground">
+                        <ImageView
+                                android:layout_width="150dp"
+                                   android:layout_height="150dp"
+                                   android:id="@+id/img_pic"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/man"
+                        />
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_toRightOf="@+id/img_pic"
+                                   android:layout_marginRight="45dp"
+                                   android:src="@drawable/photo_camera"
+                                   android:layout_marginTop="30dp"
+                                   android:id="@+id/img_edit_camera"
+                                   android:layout_gravity="center_vertical|right"
+                        />
+                    </FrameLayout>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:id="@+id/tv_name"
+                              android:textSize="20sp"
+                              android:text="Kuntal Chakraborty"
+                              android:textColor="#fff"
+                    />
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:gravity="center"
+                                  android:layout_marginTop="2dp"
+
+                    >
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:textSize="17sp"
+                                  android:id="@+id/tv_email"
+                                  android:text="kuntalchakraborty@gmail.com"
+                                  android:textColor="#dcb9f8"
+                        />
+                        <View android:layout_width="2dp"
+                              android:layout_height="20dp"
+                              android:gravity="center"
+                              android:layout_marginLeft="5dp"
+                              android:text="Kuntal Chakraborty"
+                              android:background="#dcb9f8"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:textSize="17sp"
+                                  android:id="@+id/tv_phone"
+                                  android:layout_marginLeft="5dp"
+                                  android:text="1234567890"
+                                  android:textColor="#dcb9f8"
+                        />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:gravity="center"
+                                  android:layout_marginTop="2dp"
+
+                    >
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:textSize="17sp"
+                                  android:id="@+id/tv_proffesion"
+                                  android:text="Coo at EEGRAB Services Pvt Ltd"
+                                  android:textColor="#fff"
+                        />
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_toRightOf="@+id/img_pic"
+                                   android:layout_marginLeft="7dp"
+                                   android:src="@drawable/edit"
+
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/lin_block_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="#f9f7fa"
+            >
+                <LinearLayout
+                        android:id="@+id/lin_event_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="95dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+
+                      >
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/calender_event" />
+
+
+
+                    <TextView
+                            android:id="@+id/event_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:text="Event History"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:textColor="#848484"
+                            android:textSize="25sp" />
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#848484"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:layout_marginTop="28dp"
+                      android:elevation="9dp"
+                      android:layout_gravity="center"
+                      android:padding="10dp"
+                      android:background="@drawable/button_bg_capsule_white">
+            <LinearLayout
+                    android:id="@+id/lin_eventcount_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:weightSum="2">
+                <LinearLayout
+                        android:id="@+id/lin_total_event_block"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".95"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:gravity="center_horizontal|bottom">
+
+                    <TextView
+                            android:id="@+id/tv_total_event"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Events Attend"
+                            android:textColor="#666666"
+                            android:textSize="17sp"
+                            android:layout_marginBottom="1dp"
+                            android:src="@drawable/stall"/>
+                    <TextView android:id="@+id/tv_total_event_count"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="20sp"
+                              android:textColor="#1a1a1a"
+                              android:text="5000"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/lin_view_block"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:gravity="center_horizontal|bottom">
+                    <View android:layout_width="1dp"
+                          android:layout_height="match_parent"
+                          android:background="#848484"
+                    />
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/lin_invitation_block"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".95"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:gravity="center_horizontal|bottom">
+
+                    <TextView
+                            android:id="@+id/tv_total_event_invitation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Invitation Received"
+                            android:textColor="#666666"
+                            android:textSize="19sp"
+                            android:layout_marginBottom="1dp"
+                    />
+                    <TextView android:id="@+id/tv_total_event_invitation_count"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textColor="#1a1a1a"
+                              android:textSize="22sp"
+                              android:text="2000"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

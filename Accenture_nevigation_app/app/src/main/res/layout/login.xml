@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/left_slide_menu_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+>
+    <RelativeLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+                android:id="@+id/lin_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:weightSum="2">
+            <LinearLayout
+                    android:id="@+id/lin_block_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:orientation="vertical"
+                    android:clickable="true"
+            >
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="60dp"
+                           android:src="@drawable/login_logo"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/lin_block_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical"
+                    android:background="#ac4ff7"
+                    android:layout_gravity="center"
+                    android:layout_alignStart="@+id/lin_tab">
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/nouch_icon"/>
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textSize="30sp"
+                          android:gravity="center"
+                          android:text="Login"
+                          android:textColor="#fff"
+                          android:layout_marginTop="35dp"
+                />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_shadow"
+                    android:textSize="21sp"
+                    android:imeOptions="actionNext"
+                    android:lines="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:hint="Enter your email id"
+                    android:textColorHint="#8a8a8a"
+                    android:textColor="#8a8a8a"
+                    android:layout_below="@+id/tv_Address1"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true"
+                    android:maxLength="100"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+
+                    android:layout_marginTop="30dp"
+
+            />
+
+                <EditText
+                        android:id="@+id/et_activationcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_shadow"
+                        android:textSize="21sp"
+                        android:imeOptions="actionNext"
+                        android:lines="1"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:hint="Enter your activation code"
+                        android:textColorHint="#8a8a8a"
+                        android:textColor="#8a8a8a"                        android:layout_below="@+id/tv_Address1"
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:maxLength="100"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="30dp"
+
+                />
+                <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/logim_button_background"
+                        android:textSize="21sp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="10dp"
+                        android:hint="LOGIN"
+                        android:textColorHint="#8a8a8a"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginRight="85dp"
+                        android:layout_marginTop="25dp"
+                />
+                <TextView
+                        android:id="@+id/tv_forgotcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="Forget your activation code?"
+                        android:textColor="#fff"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginLeft="52dp"
+                        android:layout_marginRight="52dp"
+                        android:layout_marginTop="20dp"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

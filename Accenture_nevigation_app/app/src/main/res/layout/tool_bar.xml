@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f9f7fa"
+    android:elevation="2dp"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:minHeight="?android:attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    />

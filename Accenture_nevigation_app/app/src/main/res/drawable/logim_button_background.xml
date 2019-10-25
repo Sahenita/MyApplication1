@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!--make a gradient background-->
+            <gradient
+                    android:type="linear"
+                    android:startColor="#45126f"
+                    android:endColor="#45126f"
+                    android:angle="-180"
+                    android:gradientRadius="90"
+            />
+            <!--apply a border around button-->
+            <stroke android:color="#8037bc" android:width="3dp" />
+            <!-- make the button corners rounded-->
+            <corners android:topRightRadius="50dp"
+                     android:bottomRightRadius="50dp"
+                     android:topLeftRadius="50dp"
+                     android:bottomLeftRadius="50dp"/>
+        </shape>
+    </item>
+</selector>

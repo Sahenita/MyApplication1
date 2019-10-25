@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:tools="http://schemas.android.com/tools"
+                                        android:id="@+id/main_activity_DrawerLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fitsSystemWindows="false"
+                                        >
+<RelativeLayout
+        android:id="@+id/contenLinView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <include
+            android:id="@+id/tool_bar"
+            layout="@layout/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    <FrameLayout android:id="@+id/container"
+            android:layout_width="match_parent"
+                 android:layout_above="@+id/tab_block"
+                 android:layout_marginBottom="20dp"
+                 android:layout_below="@+id/tool_bar"
+                 android:visibility="gone"
+                 android:layout_height="match_parent"></FrameLayout>
+    <com.example.accenture_nevigation_app.Customviewpager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_pager"
+            android:layout_above="@+id/tab_block"
+            android:layout_below="@+id/tool_bar"
+            android:layout_marginBottom="20dp"
+    >
+    </com.example.accenture_nevigation_app.Customviewpager>
+    <LinearLayout
+            android:id="@+id/tab_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="false"
+            android:layout_alignParentBottom="true"
+            android:weightSum="3">
+        <ImageView
+                android:id="@+id/anim_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/animate_img"
+                android:clickable="false"
+                android:layout_marginBottom="-4dp"
+        />
+        <ImageView
+                android:id="@+id/anim_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/animate_img"
+                android:clickable="false"
+                android:visibility="gone"
+                android:layout_marginBottom="-4dp"
+        />
+        <ImageView
+                android:id="@+id/anim_img3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/animate_img"
+                android:clickable="false"
+                android:visibility="gone"
+                android:layout_marginBottom="-4dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/lin_tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#21003B"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:weightSum="3">
+        <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:gravity="center_horizontal|bottom"
+        >
+
+            <ImageView
+                    android:id="@+id/zoom_img1"
+                    android:layout_width="20dp"
+                       android:layout_height="20dp"
+                    android:src="@drawable/stall"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="#fff"
+                      android:text="one"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|bottom">
+            <ImageView
+                    android:id="@+id/zoom_img2"
+                    android:layout_width="20dp"
+                       android:layout_height="20dp"
+                    android:layout_marginBottom="1dp"
+                    android:src="@drawable/location"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="#fff"
+                      android:text="one"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/tab3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:gravity="center_horizontal|bottom">
+
+            <ImageView
+                    android:id="@+id/zoom_img3"
+                    android:layout_width="20dp"
+                       android:layout_height="20dp"
+                    android:layout_marginBottom="1dp"
+                       android:src="@drawable/support"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="#fff"
+                      android:text="one"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:id="@+id/tablayout"-->
+    <!--android:background="#000"-->
+    <!--app:tabIndicatorColor="#e5e5e5"-->
+    <!--app:tabIndicatorHeight="0dp"-->
+    <!--android:visibility="gone"-->
+    <!--app:tabTextAppearance="@style/MyCustomTabText"-->
+    <!--android:minHeight="?attr/actionBarSize"-->
+    <!--app:tabTextColor="#f8f"-->
+    <!--app:tabSelectedTextColor="#e5e5e5"-->
+    <!--app:tabMaxWidth="0dp"-->
+    <!--app:tabMode="fixed"-->
+    <!--app:tabGravity="fill"-->
+    <!--android:layout_alignParentBottom="true"-->
+
+    <!--&gt;-->
+    <!--</android.support.design.widget.TabLayout>-->
+    <!--<android.support.design.widget.NavigationView-->
+    <RelativeLayout
+            android:id="@+id/rl_shadow"
+            android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tool_bar"
+                    android:layout_above="@+id/lin_tab"
+            android:visibility="gone"
+android:background="#919191"
+                    android:alpha=".4"
+    ></RelativeLayout>
+    <com.example.accenture_nevigation_app.AnimatingRelativeLayout
+            android:id="@+id/navigation_view"
+            android:layout_width="@dimen/sliding_drawer"
+            android:layout_below="@+id/tool_bar"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lin_tab"
+            android:visibility="gone"
+            android:layout_gravity="start">
+        <include layout="@layout/left_slide_menu" />
+
+    <!--</android.support.design.widget.NavigationView>-->
+</com.example.accenture_nevigation_app.AnimatingRelativeLayout>
+</RelativeLayout>
+
+</FrameLayout>

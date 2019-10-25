@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fdfdfd"
+
+>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+
+    >
+        <LinearLayout
+                android:id="@+id/lin_top_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ac4ff7"
+        >
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:layout_marginTop="10dp"
+                          android:layout_marginBottom="20dp"
+            >
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="You are currently in"
+                          android:gravity="center"
+                          android:textColor="#fff"
+
+                          android:textSize="29sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="25dp"
+                          android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="150dp"
+                              android:layout_height="170dp"
+                              android:layout_marginLeft="15dp"
+                              android:gravity="center"
+                              android:background="@drawable/img_background_squae">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/img_placeholder_squeae"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginRight="15dp"
+                              android:orientation="vertical">
+                    <TextView android:id="@+id/tv_stallnane"
+                              android:layout_width="wrap_content"
+                              android:text="STALL NAME"
+                              android:textSize="24sp"
+                              android:textColor="#fff"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tv_stalldreacription"
+                              android:layout_width="wrap_content"
+                              android:text="dssssssssssssgdddfsfdfsdfsdffdfdfdfdffsdfdfdsfsfdfdsfff"
+                              android:textSize="20sp"
+                              android:layout_marginTop="10dp"
+                              android:textColor="#fff"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textColor="#fff"
+                              android:text="Interested"
+                              android:paddingLeft="25dp"
+                              android:paddingTop="8dp"
+                              android:paddingBottom="8dp"
+                              android:paddingRight="25dp"
+                              android:layout_marginTop="10dp"
+                              android:textSize="21sp"
+                              android:background="@drawable/button"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginRight="3dp"
+                          android:layout_marginLeft="3dp"
+                          android:layout_marginBottom="3dp"
+                          android:background="#663399"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Services Offered"
+                          android:textSize="24sp"
+                          android:textColor="#fff"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="15dp"
+                          android:layout_marginLeft="7dp"
+                />
+                <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                >
+                </android.support.v4.view.ViewPager>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/lin_top_view"
+                      android:layout_marginTop="20dp"
+        >
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/servcRecylerVw"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
